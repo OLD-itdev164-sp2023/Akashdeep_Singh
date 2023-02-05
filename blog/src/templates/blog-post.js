@@ -1,7 +1,6 @@
-
-import React from "react";
-import { graphql } from "gatsby";
-import Layout from "../components/layout";
+import React from 'react';
+import { graphql } from 'gatsby';
+import Layout from '../components/layout';
 
 const BlogPost = ({ data }) => {
     const { title } = data.contentfulBlogPost;
@@ -16,10 +15,10 @@ const BlogPost = ({ data }) => {
 export default BlogPost;
 
 export const pageQuery = graphql`
- query blogPostQuery($slug: String!) {
-    contentfulBlogPost(slug: {eq: $slug}){
-        title
-        slug
+    query blogPostQuery($slug: String!) {
+        contentfulBlogPost(slug: {eq: $slug}) {
+            title
+            slug
+        }
     }
- }
 `
