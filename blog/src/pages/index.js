@@ -38,27 +38,3 @@ export const Head = () => <Seo title="Home" />
 
 export default IndexPage
 
-export const query = graphql`
-  {
-    allContentfulBlogPost {
-      edges {
-        node {
-          id
-          title
-          slug
-          body {
-            childMarkdownRemark {
-              excerpt
-            }
-          }
-          heroImage {
-            gatsbyImageData(
-              layout: CONSTRAINED
-              placeholder: BLURRED
-              width: 300
-            )
-          }
-        }
-      }
-    }
-  }`
