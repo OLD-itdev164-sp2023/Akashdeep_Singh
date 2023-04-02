@@ -9,7 +9,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Blog`,
+    title: `Firesubs are amazing`,
     description: `ITDEV-164 Gatsby Blog UPDATED`,
     author: `Akashdeep Singh`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
