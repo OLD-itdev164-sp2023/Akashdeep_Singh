@@ -28,11 +28,14 @@ const StyledLink = styled(Link)`
 
 const Header = ({ siteTitle }) => (
   <Outer>
-    <H1>
-      <StyledLink to="/">
-        {siteTitle}
-      </StyledLink>
-    </H1>
+    <Section width={11 / 12}>
+      <H1>
+        <StyledLink to="/">{siteTitle}</StyledLink>
+      </H1>
+    </Section>
+    <Section width={1 / 12}>
+      <IconButton icon={<Search />} variant="contrast" />
+    </Section>
   </Outer>
 )
 
