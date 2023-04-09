@@ -2,10 +2,12 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import styled from 'styled-components'
-export { H1 } from './Heading1'
+import { H1 } from './Heading1'
+import { IconButton } from "../Button"
+import {Section} from '../Section'
 
 const Outer = styled.header`
-  background: ${props => props.theme.header.backgroundColor};
+  background: ${({ theme }) => theme.variants.header.primary.backgroundColor};
   margin-bottom: 1.45rem;
   margin: 0 auto;
   padding: var(--space-4) var(--size-gutter);
